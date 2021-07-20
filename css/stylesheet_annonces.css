@@ -252,16 +252,7 @@ input[type="file"] {
     margin-right:25%;
   }
 }
-@media screen and (max-width:480px){
-  @viewport{
-    zoom:1.0;
-    width:extend-to-zoom;
-  }
-  @-ms-viewport{
-    width:extend-to-zoom;
-    zoom:1.0;
-
-  }
+@media screen and (max-device-width:480px){
   #hr_annonce{
     display:none;
   }
