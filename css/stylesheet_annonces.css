@@ -260,6 +260,7 @@ input[type="file"] {
     display:none;
   }
   #article_depot_annonce{
+    padding-right:10%;
     padding-bottom:30%;
   }
   #titre_annonce_depot_annonce{
