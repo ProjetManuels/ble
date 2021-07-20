@@ -121,7 +121,7 @@ body{
 #case_ecole_main,#case_niveau_main,#case_matiere_main{
   padding:1.5%;
   width:20%;
-  font-size:90%;
+  font-size:105%;
   font-family:'Inconsolata';
 }
 #bouton_submit_main{
