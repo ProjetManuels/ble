@@ -253,9 +253,6 @@ input[type="file"] {
   }
 }
 @media screen and (max-device-width:480px){
-  body{
-    width:auto;
-  }
   #hr_annonce{
     display:none;
   }
