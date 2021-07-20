@@ -293,8 +293,7 @@ input[type="file"] {
     margin-top:2%;
   }
   #submit_annonce{
-    margin-top:3%;
-    margin-right:30%;
+    display:none;
   }
   #div_info_annonceur_annonce{
     position:absolute;
