@@ -252,7 +252,7 @@ input[type="file"] {
     margin-right:25%;
   }
 }
-@media screen and (max-width:500px){
+@media screen and (max-device-width:480px){
   #hr_annonce{
     display:none;
   }
