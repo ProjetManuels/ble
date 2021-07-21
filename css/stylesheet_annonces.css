@@ -153,6 +153,7 @@ input[type="file"] {
   margin-bottom:1%;
 }
 #case_ecole_annonce{
+  width:290px;
   margin-top:0.5%;
   padding:0.5% 0% 0.5% 0.5%;
   font-size:105%;
@@ -160,30 +161,33 @@ input[type="file"] {
   font-family:'Inconsolata';
 }
 #select_niveau_annonce{
+  width:300px;
   margin-top:0.5%;
-  padding:0.5% 0.5% 0.5% 0.5%;
+  padding:0.5% 0% 0.5% 0.5%;
   font-size:105%;
   display:block;
   font-family:'Inconsolata';
 }
 #case_matiere_annonce{
+  width:300px;
   margin-top:0.5%;
   padding-top:0.5%;
   padding-bottom:0.5%;
   padding-left:0.5%;
-  padding-right:0%;
   font-size:105%;
   display:block;
   font-family:'Inconsolata';
 }
 #case_nombre_livre_annonce{
+  width:290px;
   margin-top:0.5%;
-  padding:0.5% 10.5% 0.5% 0.5%;
+  padding:0.5% 0% 0.5% 0.5%;
   display:block;
   font-size:95%;
   font-family:'Inconsolata';
 }
 #select_etat_livre_annonce{
+  width:300px;
   margin-top:0.5%;
   padding:0.5% 5% 0.5% 0.5%;
   font-size:95%;
@@ -252,6 +256,54 @@ input[type="file"] {
     margin-right:25%;
   }
 }
+@media screen and (max-width:500px){
+  #hr_annonce{
+    display:none;
+  }
+  #article_depot_annonce{
+    padding-right:10%;
+    padding-bottom:30%;
+  }
+  #titre_annonce_depot_annonce{
+    margin-top:2%;
+  }
+  .button{
+    padding:5% 15% 5% 8%;
+    text-decoration: justify;
+  }
+  #case_ecole_annonce{
+    width:195px;
+  }
+  #select_niveau_annonce{
+    width:200px;
+  }
+  #case_matiere_annonce{
+    width:200px; 
+  }
+  #case_nombre_livre_annonce{
+    width:195px;
+  }
+  #select_etat_livre_annonce{
+    width:200px;
+  }
+  #case_ecole_annonce,#select_niveau_annonce,#case_matiere_annonce,#case_nombre_livre_annonce,#select_etat_livre_annonce{
+    padding:1% 0% 1% 0%;
+    margin-top:1%;
+  }
+  #div_ecole_annonce,#div_niveau_annonce,#div_matiere_annonce,#div_nombre_livre_annonce,#div_etat_livre_annonce{
+    margin-top:2%;
+  }
+  #submit_annonce{    
+    position:absolute;
+    right:2%;
+    top:97%;
+  }
+  #div_info_annonceur_annonce{
+    position:absolute;
+    top:100%;
+    left:35%;
+    white-space:nowrap;
+  }
 @media screen and (max-device-width:480px){
   #hr_annonce{
     display:none;
@@ -289,10 +341,15 @@ input[type="file"] {
   #div_ecole_annonce,#div_niveau_annonce,#div_matiere_annonce,#div_nombre_livre_annonce,#div_etat_livre_annonce{
     margin-top:2%;
   }
-  #submit_annonce{
-    display:none;
+  #submit_annonce{    
+    position:absolute;
+    right:2%;
+    top:97%;
   }
   #div_info_annonceur_annonce{
     position:absolute;
-    top:95%;
+    top:100%;
+    left:35%;
+    white-space:nowrap;
   }
+}
