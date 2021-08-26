@@ -27,9 +27,12 @@
 				<div id="div_titre_annonce">
 					<label for="titre_annonce" id="label_titre_annonce">Veuillez renseigner le titre de votre annonce :</label>
 					<input type="text" id="titre_annonce_depot_annonce" name="titre_annonce">
+					<div id="div_info_annonceur_annonce">
+						<p id="vos_infos">Vos informations :</p>
+					</div>
 				</div>
 				<div id="div_photo_annonce">
-					<label for="upload" >Images :</label>
+					<label for="upload" id="label_photo_annonce" >Images :</label>
 					<label class="button" for="upload">Déposez vos photos</label>
 					<input type="file" id="upload"/>
 				</div>
@@ -138,13 +141,14 @@
 						<option value="mauvais_etat">Mauvais etat</option>
 					</select>
 				</div><hr id="hr_annonce"/>
+				<div id="div_prix_annonce">
+					<label for="case_prix_annonce" id="label_prix_annonce">Prix :</label>
+					<input type="text" name="case_prix_annonce" id="case_prix_annonce"/>
+				</div>
 				<div id="div_submit_annonce">
 					<input type="submit" name="submit_annnonce" id="submit_annonce" value=" Déposez votre annonce"/>
 				</div>
 			</form>
 		</div>
-		<div id="div_info_annonceur_annonce">
-			<p>Vos informations :</p>
-		</div>
-
+	</article>
 </body>
