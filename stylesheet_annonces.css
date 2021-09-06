@@ -26,13 +26,13 @@
     background-image: url("../images/img1.png");
     margin: 0;
     font-family:'Inconsolata',sans-serif;
+    
   }
 
 .topnav {
   overflow: hidden;
   background-color: #e9e9e9;
 }
-
 .topnav a {
   float: left;
   display: block;
@@ -102,18 +102,22 @@
       border: 1px solid #ccc;  
       }
 }
+
+article{
+  display: flex;
+  background-color:rgb(255, 255, 255);
+  margin:auto;
+  width:70%;
+  padding-top:2%;
+  padding-bottom:4%;
+  margin-top:6%;
+}
+#div_gauche_depot_annonce, .div_info_annonceur_annonce{width:50%;}
+
 #image_droite_depot_annonce{
   display:flex;
   width:50%;
   margin-left:50%;
-}
-#article_depot_annonce{
-  background-color:white;
-  margin:auto;
-  width:70%;
-  padding-top:1%;
-  padding-bottom:2%;
-  margin-top:8%;
 }
 #div_gauche_depot_annonce{
   display:block;
@@ -131,7 +135,7 @@ input[type="file"] {
   position: absolute;
   z-index: -1;
   top: 3%;
-  left: 5%;
+  left: 7%;
   font-size: 2%;
 }
 .button {
@@ -145,88 +149,109 @@ input[type="file"] {
   color:#2196F3;
   background-color:rgba(128, 128, 128, 0.192);
   background:url("images/img4.png");
-  padding:3.5% 1% 3.5% 1%;
+  padding:30px 27px 30px 13px;
   border:dotted;
   border-width:2px;
   border-color: grey;
   margin-top:0.5%;
   margin-bottom:1%;
 }
-#case_ecole_annonce{
-  margin-top:0.5%;
-  padding:0.5% 0% 0.5% 0.5%;
-  font-size:105%;
-  display:block;
-  font-family:'Inconsolata';
-}
-#select_niveau_annonce{
-  margin-top:0.5%;
-  padding:0.5% 0.5% 0.5% 0.5%;
-  font-size:105%;
-  display:block;
-  font-family:'Inconsolata';
-}
-#case_matiere_annonce{
-  margin-top:0.5%;
-  padding-top:0.5%;
-  padding-bottom:0.5%;
-  padding-left:0.5%;
-  padding-right:0%;
-  font-size:105%;
-  display:block;
-  font-family:'Inconsolata';
-}
-#case_nombre_livre_annonce{
-  margin-top:0.5%;
-  padding:0.5% 10.5% 0.5% 0.5%;
-  display:block;
-  font-size:95%;
-  font-family:'Inconsolata';
-}
-#select_etat_livre_annonce{
-  margin-top:0.5%;
-  padding:0.5% 5% 0.5% 0.5%;
-  font-size:95%;
-  display:block;
-  font-family:'Inconsolata';
-}
-#submit_annonce{
-  margin-top:-2%;
-  background-color: #2196F3;
-  color:white;
-  font-size:120%;
-  border:1px ;
-  border-radius: 7px;
-  font-family:'Inconsolata',sans-serif;
-  padding:0.8% 2% 1% 0.8%;
-  font-size:120%t;
-  text-align: center;
-  font-family:'Inconsolata';
-  margin-left:78%;
-  text-align:center;
-}
-#div_ecole_annonce,#div_niveau_annonce,#div_matiere_annonce,#div_nombre_livre_annonce,#div_etat_livre_annonce{
-  margin-bottom:1%;
-  font-size:105%;
-}
-#label_matiere_annonce{
-  margin-bottom:2%;
-}
-#div_gauche_depot_annonce{
-  
-}
 #div_titre_annonce{
+  display:inline-block;
+  justify-content:space-between;
   margin-top:2%;
+  vertical-align:top;
+}
+#div_info_annonceur_annonce{
+  font-size:105%;
+  margin-left:150%;
+  white-space: nowrap;
 }
 #titre_annonce_depot_annonce{
-  margin-top:0.5%;
-  padding:0.5% 27% 0.5% 0.5%;
+  margin-top:2%;
+  width:500px;
+  padding-bottom:8px;
+  padding-top:8px;
   font-size:105%;
   font-family:'Inconsolata';
   display:block;
 }
 #label_titre_annonce{
   font-size:105%;
+}
+#case_ecole_annonce{
+  width:400px;
+  padding-top:8px;
+  padding-bottom:8px;
+  margin-top:0.5%;
+  font-size:105%;
+  display:block;
+  font-family:'Inconsolata';
+}
+#select_niveau_annonce{
+  width:407px;
+  padding-top:8px;
+  padding-bottom:8px;
+  margin-top:0.5%;
+  font-size:105%;
+  display:block;
+  font-family:'Inconsolata';
+}
+#case_matiere_annonce{
+  width:407px;
+  padding-top:8px;
+  padding-bottom:8px;
+  margin-top:0.5%;
+  font-size:105%;
+  display:block;
+  font-family:'Inconsolata';
+}
+#case_nombre_livre_annonce{
+  width:400px;
+  padding-top:8px;
+  padding-bottom:8px;
+  margin-top:0.5%;
+  display:block;
+  font-size:95%;
+  font-family:'Inconsolata';
+}
+#select_etat_livre_annonce{
+  width:407px;
+  padding-top:8px;
+  padding-bottom:8px;
+  margin-top:0.5%;
+  font-size:95%;
+  display:block;
+  font-family:'Inconsolata';
+}
+#case_prix_annonce{
+  width:400px;
+  padding-top:8px;
+  padding-bottom:8px;
+  margin-top:0.5%;
+  font-size:105%;
+  display:block;
+  font-family:'Inconsolata';
+}
+#submit_annonce{
+  background-color: #2196F3;
+  color:white;
+  font-size:120%;
+  border:1px ;
+  border-radius: 7px;
+  font-family:'Inconsolata',sans-serif;
+  padding:13px 27px 13px 20px;
+  font-size:120%;
+  text-align: center;
+  font-family:'Inconsolata';
+  text-align:center;
+}
+#div_ecole_annonce,#div_niveau_annonce,#div_matiere_annonce,#div_nombre_livre_annonce,#div_etat_livre_annonce,#div_prix_annonce{
+  margin-bottom:3%;
+  font-size:105%;
+}
+#label_matiere_annonce{
+  margin-bottom:2%;
 }
 #div_photo_annonce{
   margin-top:3%;
@@ -238,12 +263,7 @@ input[type="file"] {
 	width:0.2%;
 	background: black;
 	}
-#div_info_annonceur_annonce{
-  font-size:105%;
-  position:absolute;
-  right:42%;
-  bottom:65.5%;
-}
+
 @media screen and (max-width:1348px){
   #article_depot_annonce{
     width:70%;
@@ -252,50 +272,251 @@ input[type="file"] {
     margin-right:25%;
   }
 }
-@media screen and (max-device-width:480px){
-  body{
-    width:auto;
-  }
+
+@media screen and (max-width:500px){
   #hr_annonce{
     display:none;
   }
   #article_depot_annonce{
-    padding-bottom:30%;
+    padding-right:10%;
+    padding-bottom:35%;
   }
   #titre_annonce_depot_annonce{
     margin-top:2%;
+    width:300px;
+    padding-bottom:7px;
+    padding-top:7px;
+  }
+  #div_titre_annonce{
+    margin-left:7%;
+    text-align: justify;
+  }
+  #div_photo_annonce{
+    margin-left:7%;
   }
   .button{
-    padding:5% 15% 5% 8%;
+    padding:15px 45px 15px 20px;
     text-decoration: justify;
   }
   #case_ecole_annonce{
-    width:195px;
+    width:300px;
   }
   #select_niveau_annonce{
-    width:200px;
+    width:307px;
   }
   #case_matiere_annonce{
-    width:200px; 
+    width:307px;
   }
   #case_nombre_livre_annonce{
-    width:195px;
+    width:300px;
   }
   #select_etat_livre_annonce{
-    width:200px;
+    width:307px;
   }
-  #case_ecole_annonce,#select_niveau_annonce,#case_matiere_annonce,#case_nombre_livre_annonce,#select_etat_livre_annonce{
-    padding:1% 0% 1% 0%;
+  #case_prix_annonce{
+    width:300px;
+  }
+  #case_ecole_annonce,#select_niveau_annonce,#case_matiere_annonce,#case_nombre_livre_annonce,#select_etat_livre_annonce,#case_prix_annonce{
+    padding-top:7px;
+    padding-bottom:7px;
     margin-top:1%;
   }
-  #div_ecole_annonce,#div_niveau_annonce,#div_matiere_annonce,#div_nombre_livre_annonce,#div_etat_livre_annonce{
+  #div_ecole_annonce,#div_niveau_annonce,#div_matiere_annonce,#div_nombre_livre_annonce,#div_etat_livre_annonce,#div_prix_annonce{
     margin-top:2%;
+    margin-left:7%;
   }
-  #submit_annonce{
-    margin-top:3%;
-    margin-right:30%;
+  #submit_annonce{    
+    position:absolute;
+    right:2%;
+    top:112%;
+    padding:13px 6px 13px 1px;
   }
   #div_info_annonceur_annonce{
     position:absolute;
-    top:95%;
+    top:103%;
+    right:32%;
+    font-size:110%;
+    margin-top:27%;
+    margin-left:35%;
+    white-space:nowrap;
   }
+}
+
+@media screen and (min-width:501px) and (max-width:754px){
+  #hr_annonce{
+    display:none;
+  }
+  #article_depot_annonce{
+    padding-bottom:20%;
+    padding-right:10%;
+  }
+  #form_depot_annonce{
+    margin-left:8%;
+  }
+  #titre_annonce_depot_annonce{
+    width:300px;
+    margin-top:2%;
+  }
+  .button{
+    padding:15px 45px 15px 20px;
+  }
+  #titre_annonce_depot_annonce,#case_ecole_annonce,#select_niveau_annonce,#case_matiere_annonce,#case_nombre_livre_annonce,#select_etat_livre_annonce,#case_prix_annonce{
+    padding-bottom:7px;
+    padding-top:7px;
+  }
+  #case_ecole_annonce,#case_nombre_livre_annonce,#case_prix_annonce{
+    width:300px;
+  }
+  #select_niveau_annonce,#case_matiere_annonce,#select_etat_livre_annonce{
+    width:307px;
+  }
+  #div_titre_annonce,#div_photo_annonce,#div_ecole_annonce,#div_niveau_annonce,#div_matiere_annonce,#div_nombre_livre_annonce,#div_etat_livre_annonce,#div_prix_annonce{
+    margin-left:8%;
+  }
+  #div_titre_annonce,#div_ecole_annonce,#div_niveau_annonce,#div_matiere_annonce,#div_nombre_livre_annonce,#div_etat_livre_annonce,#div_prix_annonce{
+    margin-top:3%;
+  }
+  #case_ecole_annonce,#select_niveau_annonce,#case_matiere_annonce,#case_nombre_livre_annonce,#select_etat_livre_annonce,#case_prix_annonce{
+    margin-top:2%;
+  }
+  #titre_annonce_depot_annonce{
+    margin-top:5%;
+  }
+  #submit_annonce{
+    display:block;
+    margin-left:21%;
+    margin-top:7%;
+    padding:13px 6px 13px 1px;
+  }
+  #div_info_annonceur_annonce{
+    margin-top:10%;
+    margin-right:10%;
+    margin-left:15%;
+    position:absolute;
+    top:850px;
+  }
+}
+
+@media screen and (min-width:755px) and (max-width:1100px){
+  #hr_annonce{
+    display:none;
+  }
+  #article_depot_annonce{
+    padding-bottom:20%;
+    padding-right:10%;
+  }
+  #form_depot_annonce{
+    margin-left:8%;
+  }
+  #titre_annonce_depot_annonce{
+    width:300px;
+    margin-top:2%;
+  }
+  .button{
+    padding:15px 45px 15px 20px;
+  }
+  #titre_annonce_depot_annonce,#case_ecole_annonce,#select_niveau_annonce,#case_matiere_annonce,#case_nombre_livre_annonce,#select_etat_livre_annonce,#case_prix_annonce{
+    padding-bottom:7px;
+    padding-top:7px;
+  }
+  #titre_annonce_depot_annonce,#case_ecole_annonce,#case_nombre_livre_annonce,#case_prix_annonce{
+    width:350px;
+  }
+  #select_niveau_annonce,#case_matiere_annonce,#select_etat_livre_annonce{
+    width:357px;
+  }
+  #div_titre_annonce,#div_photo_annonce,#div_ecole_annonce,#div_niveau_annonce,#div_matiere_annonce,#div_nombre_livre_annonce,#div_etat_livre_annonce,#div_prix_annonce{
+    margin-left:8%;
+  }
+  #div_titre_annonce,#div_ecole_annonce,#div_niveau_annonce,#div_matiere_annonce,#div_nombre_livre_annonce,#div_etat_livre_annonce,#div_prix_annonce{
+    margin-top:3%;
+  }
+  #case_ecole_annonce,#select_niveau_annonce,#case_matiere_annonce,#case_nombre_livre_annonce,#select_etat_livre_annonce,#case_prix_annonce{
+    margin-top:2%;
+  }
+  #titre_annonce_depot_annonce{
+    margin-top:5%;
+  }
+  #submit_annonce{
+    display:block;
+    margin-left:21%;
+    margin-top:7%;
+    padding:13px 6px 13px 1px;
+  }
+  #div_info_annonceur_annonce{
+    margin-top:15%;
+    margin-right:10%;
+    margin-left:15%;
+    position:absolute;
+    top:850px;
+  }
+}
+
+
+@media screen and (min-width:1101px) and (max-width:1624px){
+  #hr_annonce{
+    margin-top:-70%;
+    padding-top:700px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-left:55%;
+    width:2px;
+  }
+  #article_depot_annonce{
+    padding-bottom:20%;
+    padding-right:10%;
+  }
+  #form_depot_annonce{
+    margin-left:-4%;
+  }
+  #titre_annonce_depot_annonce{
+    width:300px;
+    margin-top:2%;
+  }
+  .button{
+    padding:15px 45px 15px 20px;
+  }
+  #titre_annonce_depot_annonce,#case_ecole_annonce,#select_niveau_annonce,#case_matiere_annonce,#case_nombre_livre_annonce,#select_etat_livre_annonce,#case_prix_annonce{
+    padding-bottom:7px;
+    padding-top:7px;
+  }
+  #titre_annonce_depot_annonce,#case_ecole_annonce,#case_nombre_livre_annonce,#case_prix_annonce{
+    width:330px;
+  }
+  #select_niveau_annonce,#case_matiere_annonce,#select_etat_livre_annonce{
+    width:337px;
+  }
+  #div_titre_annonce,#div_photo_annonce,#div_ecole_annonce,#div_niveau_annonce,#div_matiere_annonce,#div_nombre_livre_annonce,#div_etat_livre_annonce,#div_prix_annonce{
+    margin-left:8%;
+  }
+  #div_titre_annonce,#div_ecole_annonce,#div_niveau_annonce,#div_matiere_annonce,#div_nombre_livre_annonce,#div_etat_livre_annonce,#div_prix_annonce{
+    margin-top:3%;
+  }
+  #case_ecole_annonce,#select_niveau_annonce,#case_matiere_annonce,#case_nombre_livre_annonce,#select_etat_livre_annonce,#case_prix_annonce{
+    margin-top:2%;
+  }
+  #titre_annonce_depot_annonce{
+    margin-top:5%;
+  }
+  #submit_annonce{
+    display:block;
+    margin-left:85%;
+    margin-top:7%;
+    padding:13px 6px 13px 1px;
+  }
+  #div_titre_annonce{
+    display:inline-block;
+    justify-content:space-between;
+    margin-top:2%;
+    vertical-align:top;
+  }
+  #div_info_annonceur_annonce{
+    font-size:105%;
+    margin-left:133%;
+    white-space: nowrap;
+    margin-top:-22%;
+  }
+  #div_photo_annonce{
+    margin-top:8%;
+  }
+}
