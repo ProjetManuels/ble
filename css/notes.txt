@@ -1,8 +1,0 @@
-matières à mettre dans les choix :
-
-- Maths
-- Francais
-- 
-
-bleu qu'on utilises sur la page :
-#2196F3
